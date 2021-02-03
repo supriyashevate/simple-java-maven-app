@@ -24,16 +24,24 @@
             <configuration>
                 <target>10</target>
                 <source>10</source>
-                <release>10</release>   
-               <archive>
-          <manifest>
-            <addClasspath>true</addClasspath>
-            <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.mypackage.MyClass</mainClass>
-          </manifest>
-        </archive>
+                <release>10</release>              
             </configuration>          
         </plugin>
     </plugins>
+    <plugins>
+<plugin>
+<!-- Build an executable JAR -->
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<version>2.4</version>
+<configuration>
+<archive>
+<manifest>
+<mainClass>com.roufid.tutorials.AppTest</mainClass>
+</manifest>
+</archive>
+</configuration>
+</plugin>
+</plugins>
   </build>
 </project>
