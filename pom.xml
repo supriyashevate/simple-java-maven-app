@@ -24,17 +24,15 @@
             <configuration>
                 <target>10</target>
                 <source>10</source>
-                <release>10</release>              
-            </configuration>
-          <configuration>
-        <archive>
+                <release>10</release>   
+               <archive>
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
             <mainClass>com.mypackage.MyClass</mainClass>
           </manifest>
         </archive>
-      </configuration>
+            </configuration>          
         </plugin>
     </plugins>
   </build>
